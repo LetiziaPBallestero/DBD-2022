@@ -1,0 +1,18 @@
+En **negrita** y en minúscula son los id
+
+**PERSONA** = (**dni** , cuit , apellido , nombre , email , dirección )
+**TELÉFONOS** = (**numero** , dni (fk))
+**CLIENTE** = (dni (fk) , **numero de cliente** )
+**EMPLEADO** = ( dni (fk) , **numero de empleado**, cantidad de hijos , fecha de ingreso , fecha nacimiento)
+**VENTA** =  ( numero de empleado (fk) , numero de cliente (fk) , hora, fecha , **ticket**)
+**VENTA_DÉBITO** = (**ticket(fk**) , numero(fk) )
+**VENTA_EFECTIVO** = (**ticket(fk**) ,constancia (fk) )
+**VENTA_CRÉDITO** = (**ticket(fk**) ,numero(fk) , cantidad de cuotas)
+**ARTICULO** = (**numero** , precio, tamaño, nombre, stock , descripción)
+**VENTA_ARTICULO** =  (precio , cantidad, **numero (fk) , ticket (fk)**)
+**EFECTIVO** = (**constancia**)
+**DEBITO** =  (**numero(fk)**  )
+**CREDITO** =  (**numero(fk)**  )
+**TARJETA** = (**numero(fk)**  , nombre (fk) , nombre (fk) )
+**ENTIDAD** = (**nombre**)
+**BANCO** =  (**nombre**)
